@@ -1,99 +1,620 @@
-{{WelcomeBanner}}
-<!--Main page of Wiki: top level pages for all clusters and HPRC material are shown here.-->
-<!-- Blank Line -->
-<!-- Blank Line -->
-
-{{ TextBox 
-| content = {{TitleBar | align=center | title=Announcements }}
-* '''Ada to Grace Migration: ''' Users should begin migrating from Ada to Grace now. Read more on our [[:HPRC:AdaGraceFAQ | Ada to Grace migration FAQ]].
-
-* '''Grace Cluster Status: ''' Cluster deployed, currently in testing and early user access mode. 
-
-* '''New GPU nodes in the Terra cluster: '''  '''Four''' new GPU nodes are now available in the Terra Cluster.  Each GPU node has two Intel Skylake Xeon Gold 5118 20-core processors, 192 GB of memory and two NVIDIA 32GB V100 GPUs. To use these new GPU nodes, please submit jobs to the '''gpu''' queue on Terra by including the following job directive in your job scripts:
-
-<pre>
-#SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
+<html class="client-js" lang="en" dir="ltr"><head>
+<meta charset="UTF-8">
+<title>TAMU HPRC</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Main_Page","wgTitle":"Main Page","wgCurRevisionId":12466,"wgRevisionId":12466,"wgArticleId":1,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Main_Page","wgRelevantArticleId":1,"wgRequestId":"YTJDCKVbEA4AADvM30UAAAAI","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgIsMainPage":true});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","site":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.tokens@05geb7r",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<style>#ca-nstab-main { display:none; }</style><style>#ca-history { display:none; }</style><style>#ca-viewsource { display:none; }</style><style>#ca-view { display:none; }</style>
+<style>
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:0;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#2a4b8d;color:#fff}.suggestions-special .special-label{color:#72777d;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c8ccd1}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.15">
+<link rel="shortcut icon" href="https://dmc-assets.tamu.edu/global/images/icons/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="TAMU HPRC (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://hprc.tamu.edu/w/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="TAMU HPRC Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+<script src="/w/load.php?debug=false&amp;lang=en&amp;modules=jquery%2Cmediawiki&amp;only=scripts&amp;skin=vector&amp;version=1gjn1t5"></script></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><div id="localNotice" lang="en" dir="ltr"><div class="mw-parser-output"><p><a href="https://hprc.tamu.edu/" rel="nofollow"><img alt="Hprc banner tamu.png" src="/w/images/9/93/Hprc_banner_tamu.png" width="900" height="102"></a>
+</p></div></div></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Main Page</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From TAMU HPRC</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table id="mp-topbanner" style="width:100%; background:#f9f9f9; margin:1.2em 0 6px 0; border:1px solid #ddd;">
+<tbody><tr>
+<td style="width:60%; color:#000;">
+<table style="width:280px; border:none; background:none;">
+<tbody><tr>
+<td style="width:280px; text-align:center; white-space:nowrap; color:#000;">
+<div style="font-size:200%; border:none; margin:0; padding:.1em; color:#000;">Welcome to the TAMU HPRC Wiki</div>
+</td></tr></tbody></table>
+</td>
+<td style="width:12%; font-size:95%;">
+<ul><li><a href="/wiki/Grace" title="Grace"> Grace Guide</a></li>
+<li><a href="/wiki/Terra" title="Terra"> Terra Guide</a></li></ul>
+</td>
+<td style="width:12%; font-size:95%;">
+<ul><li><a href="/wiki/SW" title="SW"> Software</a></li>
+<li><a href="/wiki/HPRC:AdaGraceFAQ" title="HPRC:AdaGraceFAQ"> Ada to Grace migration FAQ</a></li></ul>
+</td>
+<td style="width:12%; font-size:95%;">
+<ul><li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/policies">Usage Policies</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/about/contact.html">Contact Us</a></li></ul>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tbody><tr>
+<td><div style="background:#e7e7e7; border:1px solid #c6c7c7;">
+<h2 style="margin:3px; background:#500000; font-size:120%; font-weight:bold; border:1px solid #332C2C; text-align:center; color:#FFF; padding:0.2em 0.4em;"><span class="mw-headline" id="Announcements">Announcements</span></h2>
+<ul><li><b>Ada to Grace Migration: </b> Users should begin migrating from Ada to Grace now. Read more on our <a href="/wiki/HPRC:AdaGraceFAQ" title="HPRC:AdaGraceFAQ"> Ada to Grace migration FAQ</a>.</li></ul>
+<ul><li><b>Grace Cluster Status: </b> Cluster deployed, currently in testing and early user access mode.</li></ul>
+<ul><li><b>New GPU nodes in the Terra cluster: </b>  <b>Four</b> new GPU nodes are now available in the Terra Cluster.  Each GPU node has two Intel Skylake Xeon Gold 5118 20-core processors, 192 GB of memory and two NVIDIA 32GB V100 GPUs. To use these new GPU nodes, please submit jobs to the <b>gpu</b> queue on Terra by including the following job directive in your job scripts:</li></ul>
+<pre>#SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
 #SBATCH --partition=gpu              #Request the GPU partition/queue
 </pre>
-
-}}
-{{ TextBox 
-| content = {{TitleBar | align=center | title=Getting an Account }}
+</div>
+</td></tr></tbody></table>
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tbody><tr>
+<td><div style="background:#e7e7e7; border:1px solid #c6c7c7;">
+<h2 style="margin:3px; background:#500000; font-size:120%; font-weight:bold; border:1px solid #332C2C; text-align:center; color:#FFF; padding:0.2em 0.4em;"><span class="mw-headline" id="Getting_an_Account">Getting an Account</span></h2>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align=center; margin: auto;">
-* '''Understanding HPRC:''' For a brief overview of what services HPRC offers, see [https://www.youtube.com/watch?v=rfqtDigwgMg&list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8 this video] in our getting started series on YouTube.
-
-* '''New to HPRC's resources?'''  [https://hprc.tamu.edu/resources/ This page] explains the HPRC resources available to the TAMU community.   Also see the [https://hprc.tamu.edu/policies/ Policies Page] to better understand the rules and etiquette of cluster usage.. 
-
-* '''Accessing the clusters:''' All computer systems managed by the HPRC are available for use to TAMU faculty, staff, and students who require large-scale computing capabilities. The HPRC hosts the [[:Ada | Ada]], [[:Terra | Terra]], and [[:Grace:Intro | Grace]] clusters at TAMU. To apply for or renew an HPRC account, please visit the [https://hprc.tamu.edu/apply/ Account Applications] page. For information on how to obtain an allocation to run jobs on one of our clusters, please visit the [https://hprc.tamu.edu/policies/allocations.html Allocations Policy] page. ''All accounts expire and must be renewed in September of each year.''
-
+<ul><li><b>Understanding HPRC:</b> For a brief overview of what services HPRC offers, see <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=rfqtDigwgMg&amp;list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8">this video</a> in our getting started series on YouTube.</li></ul>
+<ul><li><b>New to HPRC's resources?</b>  <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/resources/">This page</a> explains the HPRC resources available to the TAMU community.   Also see the <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/policies/">Policies Page</a> to better understand the rules and etiquette of cluster usage..</li></ul>
+<ul><li><b>Accessing the clusters:</b> All computer systems managed by the HPRC are available for use to TAMU faculty, staff, and students who require large-scale computing capabilities. The HPRC hosts the <a href="/wiki/Ada" title="Ada"> Ada</a>, <a href="/wiki/Terra" title="Terra"> Terra</a>, and <a href="/wiki/Grace:Intro" title="Grace:Intro"> Grace</a> clusters at TAMU. To apply for or renew an HPRC account, please visit the <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/apply/">Account Applications</a> page. For information on how to obtain an allocation to run jobs on one of our clusters, please visit the <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/policies/allocations.html">Allocations Policy</a> page. <i>All accounts expire and must be renewed in September of each year.</i></li></ul>
 </div>
-}}
-{{ TextBox 
-| content = {{TitleBar | align=center | title=Using the Clusters}}
+</div>
+</td></tr></tbody></table>
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tbody><tr>
+<td><div style="background:#e7e7e7; border:1px solid #c6c7c7;">
+<h2 style="margin:3px; background:#500000; font-size:120%; font-weight:bold; border:1px solid #332C2C; text-align:center; color:#FFF; padding:0.2em 0.4em;"><span class="mw-headline" id="Using_the_Clusters">Using the Clusters</span></h2>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-bottom: 1rem;">
-* '''QuickStart Guides: ''' For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. [https://hprc.tamu.edu/wiki/Grace:QuickStart Grace Quickstart Guide], [https://hprc.tamu.edu/wiki/Terra:QuickStart Terra Quickstart Guide].<br>
+<ul><li><b>QuickStart Guides: </b> For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/wiki/Grace:QuickStart">Grace Quickstart Guide</a>, <a rel="nofollow" class="external text" href="https://hprc.tamu.edu/wiki/Terra:QuickStart">Terra Quickstart Guide</a>.<br></li></ul>
 </div>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-bottom: 1rem;">
-* '''Batch Jobs''': As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below. 
+<ul><li><b>Batch Jobs</b>: As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below.</li></ul>
 </div>
 <div style="column-count:2;-moz-column-count:2;-webkit-column-count:2; font-size:100%; text-align:center; margin: auto;">
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; border: 1px solid black; padding-bottom: 1rem;">
-'''Grace / SLURM Batch Pages'''<br>
-[[:Grace:Batch | Complete Grace Batch Page]]<br>
-[[:Grace:Batch#Job_Submission | Job Submission (sbatch)]]<br>
-[[:Grace:Batch#Batch_Queues | Grace Queue Structure]]<br>
+<p><b>Grace / SLURM Batch Pages</b><br>
+<a href="/wiki/Grace:Batch" title="Grace:Batch"> Complete Grace Batch Page</a><br>
+<a href="/wiki/Grace:Batch#Job_Submission" title="Grace:Batch"> Job Submission (sbatch)</a><br>
+<a href="/wiki/Grace:Batch#Batch_Queues" title="Grace:Batch"> Grace Queue Structure</a><br>
+</p>
 </div>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; border: 1px solid black; padding-bottom: 1rem;">
-'''Terra / SLURM Batch Pages'''<br>
-[[:Terra:Batch | Complete Terra Batch Page]]<br>
-[[:Terra:Batch#Job_Submission | Job Submission (sbatch)]]<br>
-[[:Terra:Batch#Queues | Terra Queue Structure]]<br>
+<p><b>Terra / SLURM Batch Pages</b><br>
+<a href="/wiki/Terra:Batch" class="mw-redirect" title="Terra:Batch"> Complete Terra Batch Page</a><br>
+<a href="/wiki/Terra:Batch#Job_Submission" class="mw-redirect" title="Terra:Batch"> Job Submission (sbatch)</a><br>
+<a href="/wiki/Terra:Batch#Queues" class="mw-redirect" title="Terra:Batch"> Terra Queue Structure</a><br>
+</p>
 </div>
 </div>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-left: 1.5rem; padding-top: 1rem; border:">
-Creating your own batch jobs: the [[:SW:tamubatch | tamubatch Page]] provides information on how to use tamubatch to create and submit jobs easily.
+<p>Creating your own batch jobs: the <a href="/wiki/SW:tamubatch" title="SW:tamubatch"> tamubatch Page</a> provides information on how to use tamubatch to create and submit jobs easily.
+</p>
 </div>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-bottom: 1rem;">
-* '''Troubleshooting:''' While we cannot predict all bugs and errors, some issues on our clusters are common enough to catalog. See the [[:HPRC:CommonProblems | Common Problems and Quick Solutions Page]] for a small collection of the most prevalent issues. For further assistance, users can contact '''help@hprc.tamu.edu''' to open a support ticket. 
+<ul><li><b>Troubleshooting:</b> While we cannot predict all bugs and errors, some issues on our clusters are common enough to catalog. See the <a href="/wiki/HPRC:CommonProblems" title="HPRC:CommonProblems"> Common Problems and Quick Solutions Page</a> for a small collection of the most prevalent issues. For further assistance, users can contact <b>help@hprc.tamu.edu</b> to open a support ticket.</li></ul>
 </div>
-}}
-{{ TextBox 
-| content = {{TitleBar | align=center | title=HPRC's YouTube Channel }}
+</div>
+</td></tr></tbody></table>
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tbody><tr>
+<td><div style="background:#e7e7e7; border:1px solid #c6c7c7;">
+<h2 style="margin:3px; background:#500000; font-size:120%; font-weight:bold; border:1px solid #332C2C; text-align:center; color:#FFF; padding:0.2em 0.4em;"><span id="HPRC's_YouTube_Channel"></span><span class="mw-headline" id="HPRC.27s_YouTube_Channel">HPRC's YouTube Channel</span></h2>
 <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:110%; align=center; margin: auto; padding-bottom: 1rem;">
-* '''Prefer visual learning?''' HPRC has launched its official YouTube channel where you can find video versions of our help guides, recordings of our short courses, and more! '''Subscribe''' [https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw?disable_polymer=true here.]
+<ul><li><b>Prefer visual learning?</b> HPRC has launched its official YouTube channel where you can find video versions of our help guides, recordings of our short courses, and more! <b>Subscribe</b> <a rel="nofollow" class="external text" href="https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw?disable_polymer=true">here.</a></li></ul>
 </div>
-}}
-<!-- Blank Line -->
-<!-- Blank Line -->
-<!--         Links: More Information         -->
-<!--         Text Box Template (has buffer around it)         -->
-{{ TextBox 
-| content = {{TitleBar | align=center | title=Further Reading }}
+</div>
+</td></tr></tbody></table>
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tbody><tr>
+<td><div style="background:#e7e7e7; border:1px solid #c6c7c7;">
+<h2 style="margin:3px; background:#500000; font-size:120%; font-weight:bold; border:1px solid #332C2C; text-align:center; color:#FFF; padding:0.2em 0.4em;"><span class="mw-headline" id="Further_Reading">Further Reading</span></h2>
 <div style="column-count:4;-moz-column-count:4;-webkit-column-count:4; font-size:110%;">
-* [[:Ada | Ada User Guide]]
-* [[:Terra | Terra User Guide]]
-* [[:Grace | Grace User Guide]]
-* [[:HPRCLab | Workstations]]
-* [https://hprc.tamu.edu/resources/ Hardware Overview]
-* [[:Ada:Intro | Ada Hardware]]
-* [[:Terra:Intro | Terra Hardware]]
-* [[:Grace:Intro | Grace Hardware]]
-* [[:SW:Portal | TAMU OnDemand Portal]]
-* [[:SW | Software Overview]]
-* [[:SW:Modules | Loading Software]]
-* [[:SW:License_Checker | Check Software License Availability]]
-* [https://hprc.tamu.edu/ Software Policies]
-* [https://hprc.tamu.edu/policies/ Usage Policies]
-* [https://hprc.tamu.edu/apply/ Account Application]
-* [https://hprc.tamu.edu/ams/ Manage SUs (Transfers)]
-* [https://hprc.tamu.edu/about/contact.html Contact Us]
-* [https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw Youtube Channel]
+<ul><li><a href="/wiki/Ada" title="Ada"> Ada User Guide</a></li>
+<li><a href="/wiki/Terra" title="Terra"> Terra User Guide</a></li>
+<li><a href="/wiki/Grace" title="Grace"> Grace User Guide</a></li>
+<li><a href="/wiki/HPRCLab" title="HPRCLab"> Workstations</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/resources/">Hardware Overview</a></li>
+<li><a href="/wiki/Ada:Intro" title="Ada:Intro"> Ada Hardware</a></li>
+<li><a href="/wiki/Terra:Intro" title="Terra:Intro"> Terra Hardware</a></li>
+<li><a href="/wiki/Grace:Intro" title="Grace:Intro"> Grace Hardware</a></li>
+<li><a href="/wiki/SW:Portal" title="SW:Portal"> TAMU OnDemand Portal</a></li>
+<li><a href="/wiki/SW" title="SW"> Software Overview</a></li>
+<li><a href="/wiki/SW:Modules" title="SW:Modules"> Loading Software</a></li>
+<li><a href="/wiki/SW:License_Checker" title="SW:License Checker"> Check Software License Availability</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/">Software Policies</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/policies/">Usage Policies</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/apply/">Account Application</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/ams/">Manage SUs (Transfers)</a></li>
+<li><a rel="nofollow" class="external text" href="https://hprc.tamu.edu/about/contact.html">Contact Us</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw">Youtube Channel</a></li></ul>
 </div>
-}}
-<!--Blank Line-->
-<!--Logo Banner Template-->
-{{LogoBanner}}
+</div>
+</td></tr></tbody></table>
+<table id="mp-banner" style="width:100%; background:#f9f9f9; margin:1.2em 0 6px 0; border:1px solid #ddd;">
+<tbody><tr>
+<td style="width:100%; color:#000;">
+<table style="width:100%; border:none; background:#f9f9f9;">
+<tbody><tr>
+<td style="width:280px; text-align:center; white-space:nowrap; color:#000;">
+<div style="font-size:162%; border:none; margin:0; padding:.1em; color:#000;">Proudly Serving Members of the Texas A&amp;M University System</div>
+<div id="tamulogos" style="font-size:85%;">
+<p><a href="/wiki/File:Tamu_square.jpg" class="image"><img alt="Tamu square.jpg" src="/w/images/thumb/6/62/Tamu_square.jpg/75px-Tamu_square.jpg" width="75" height="75" srcset="/w/images/thumb/6/62/Tamu_square.jpg/113px-Tamu_square.jpg 1.5x, /w/images/thumb/6/62/Tamu_square.jpg/150px-Tamu_square.jpg 2x"></a> 
+<a href="/wiki/File:Tamu_q_square.png" class="image"><img alt="Tamu q square.png" src="/w/images/thumb/0/0c/Tamu_q_square.png/75px-Tamu_q_square.png" width="75" height="75" srcset="/w/images/thumb/0/0c/Tamu_q_square.png/113px-Tamu_q_square.png 1.5x, /w/images/thumb/0/0c/Tamu_q_square.png/150px-Tamu_q_square.png 2x"></a>
+<a href="/wiki/File:Tamu_hsc_square.jpg" class="image"><img alt="Tamu hsc square.jpg" src="/w/images/thumb/8/87/Tamu_hsc_square.jpg/75px-Tamu_hsc_square.jpg" width="75" height="75" srcset="/w/images/thumb/8/87/Tamu_hsc_square.jpg/113px-Tamu_hsc_square.jpg 1.5x, /w/images/thumb/8/87/Tamu_hsc_square.jpg/150px-Tamu_hsc_square.jpg 2x"></a>
+<a href="/wiki/File:Tamu_tti_square.png" class="image"><img alt="Tamu tti square.png" src="/w/images/thumb/9/9d/Tamu_tti_square.png/75px-Tamu_tti_square.png" width="75" height="75" srcset="/w/images/9/9d/Tamu_tti_square.png 1.5x"></a>
+<a href="/wiki/File:Tamu_agrilife_square.jpg" class="image"><img alt="Tamu agrilife square.jpg" src="/w/images/thumb/e/eb/Tamu_agrilife_square.jpg/75px-Tamu_agrilife_square.jpg" width="75" height="75" srcset="/w/images/e/eb/Tamu_agrilife_square.jpg 1.5x"></a>
+<a href="/wiki/File:Tamu_tees_nosquare.png" class="image"><img alt="Tamu tees nosquare.png" src="/w/images/thumb/e/e9/Tamu_tees_nosquare.png/75px-Tamu_tees_nosquare.png" width="75" height="33" srcset="/w/images/thumb/e/e9/Tamu_tees_nosquare.png/113px-Tamu_tees_nosquare.png 1.5x, /w/images/thumb/e/e9/Tamu_tees_nosquare.png/150px-Tamu_tees_nosquare.png 2x"></a>
+<a href="/wiki/File:Tamu_teex_nosquare.png" class="image"><img alt="Tamu teex nosquare.png" src="/w/images/thumb/4/4d/Tamu_teex_nosquare.png/75px-Tamu_teex_nosquare.png" width="75" height="46" srcset="/w/images/thumb/4/4d/Tamu_teex_nosquare.png/113px-Tamu_teex_nosquare.png 1.5x, /w/images/thumb/4/4d/Tamu_teex_nosquare.png/150px-Tamu_teex_nosquare.png 2x"></a>
+<a href="/wiki/File:Tamu_tvmdl_nosquare.png" class="image"><img alt="Tamu tvmdl nosquare.png" src="/w/images/thumb/2/21/Tamu_tvmdl_nosquare.png/75px-Tamu_tvmdl_nosquare.png" width="75" height="38" srcset="/w/images/thumb/2/21/Tamu_tvmdl_nosquare.png/113px-Tamu_tvmdl_nosquare.png 1.5x, /w/images/thumb/2/21/Tamu_tvmdl_nosquare.png/150px-Tamu_tvmdl_nosquare.png 2x"></a>
+</p>
+</div>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20210903034704
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.048 seconds
+Real time usage: 0.078 seconds
+Preprocessor visited node count: 96/1000000
+Preprocessor generated node count: 424/1000000
+Post‐expand include size: 10399/2097152 bytes
+Template argument size: 7172/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 157/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   11.116      1 -total
+ 54.29%    6.035      5 Template:TextBox
+ 24.27%    2.698      5 Template:TitleBar
+ 20.21%    2.247      1 Template:LogoBanner
+ 19.76%    2.197      1 Template:WelcomeBanner
+-->
+</div>
+<!-- Saved in parser cache with key extwikidb:pcache:idhash:1-0!canonical and timestamp 20210903034704 and revision id 12466
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://hprc.tamu.edu/w/index.php?title=Main_Page&amp;oldid=12466">https://hprc.tamu.edu/w/index.php?title=Main_Page&amp;oldid=12466</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Main+Page" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Main_Page" title="View the content page [alt-shift-c]" accesskey="c">Main page</a></span></li><li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Main_Page&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [alt-shift-t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected" style=""><span><a href="/wiki/Main_Page">Read</a></span></li><li id="ca-viewsource" class="collapsible" style=""><span><a href="/w/index.php?title=Main_Page&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible" style=""><span><a href="/w/index.php?title=Main_Page&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label" style="">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search TAMU HPRC" title="Search TAMU HPRC [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-Important_Info" aria-labelledby="p-Important_Info-label">
+			<h3 id="p-Important_Info-label">Important Info</h3>
+			<div class="body">
+								<ul>
+					<li id="n-HPRC-Home-Page"><a href="https://hprc.tamu.edu" rel="nofollow">HPRC Home Page</a></li><li id="n-Wiki-Home-Page"><a href="/wiki/Main_Page">Wiki Home Page</a></li><li id="n-Policies"><a href="https://hprc.tamu.edu/policies/" rel="nofollow">Policies</a></li><li id="n-New-User-Info"><a href="https://hprc.tamu.edu/user_services/new_user_information.html" rel="nofollow">New User Info</a></li><li id="n-Contact-Us"><a href="https://hprc.tamu.edu/about/contact.html" rel="nofollow">Contact Us</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-User_Guides" aria-labelledby="p-User_Guides-label">
+			<h3 id="p-User_Guides-label">User Guides</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Grace"><a href="/wiki/Grace">Grace</a></li><li id="n-Terra"><a href="/wiki/Terra">Terra</a></li><li id="n-OOD-Portal"><a href="/wiki/SW:Portal">OOD Portal</a></li><li id="n-Galaxy"><a href="/wiki/SW:Galaxy">Galaxy</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Helpful_Pages" aria-labelledby="p-Helpful_Pages-label">
+			<h3 id="p-Helpful_Pages-label">Helpful Pages</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Ada-to-Grace-FAQ"><a href="/wiki/HPRC:AdaGraceFAQ">Ada to Grace FAQ</a></li><li id="n-AMS-Documentation"><a href="/wiki/HPRC:AMS">AMS Documentation</a></li><li id="n-Batch-Translation"><a href="/wiki/HPRC:Batch_Translation">Batch Translation</a></li><li id="n-Software"><a href="/wiki/SW">Software</a></li><li id="n-File-Transfer"><a href="/wiki/HPRC:FileTransfers">File Transfer</a></li><li id="n-Two-Factor"><a href="/wiki/Two_Factor">Two Factor</a></li><li id="n-Systems"><a href="https://hprc.tamu.edu/resources" rel="nofollow">Systems</a></li><li id="n-Events"><a href="https://hprc.tamu.edu/events/" rel="nofollow">Events</a></li><li id="n-FAQ"><a href="/wiki/HPRC:CommonProblems">FAQ</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Main_Page" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Main_Page" rel="nofollow" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/w/index.php?title=Main_Page&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/w/index.php?title=Main_Page&amp;oldid=12466" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Main_Page&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 20 August 2021, at 14:09.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="/wiki/TAMU_Supercomputing_Facility:Privacy" class="mw-redirect" title="TAMU Supercomputing Facility:Privacy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/TAMU_Supercomputing_Facility:About" class="mw-redirect" title="TAMU Supercomputing Facility:About">About TAMU HPRC</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/TAMU_Supercomputing_Facility:General_disclaimer" class="mw-redirect" title="TAMU Supercomputing Facility:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<!-- Debug output:
+IP: 10.229.23.214
+Start request GET /wiki/Main_Page
+HTTP HEADERS:
+HOST: hprc.tamu.edu
+CONNECTION: keep-alive
+SEC-CH-UA: "Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"
+SEC-CH-UA-MOBILE: ?0
+UPGRADE-INSECURE-REQUESTS: 1
+USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+SEC-FETCH-SITE: cross-site
+SEC-FETCH-MODE: navigate
+SEC-FETCH-USER: ?1
+SEC-FETCH-DEST: document
+REFERER: https://www.google.com/
+ACCEPT-ENCODING: gzip, deflate, br
+ACCEPT-LANGUAGE: en-US,en;q=0.9
+COOKIE: _ga=GA1.2.1477787568.1623768175; __insp_nv=true; __insp_wid=1357415969; __insp_targlpt=VGhlIE1pc3NpbmcgTGluaw%3D%3D; __insp_targlpu=aHR0cHM6Ly9pdC50YW11LmVkdS9taXNzaW5nbGluay8%3D; __insp_norec_sess=true; __insp_slim=1623768322459; extwikidbUserName=Emmanueljpreciado
+[caches] cluster: EmptyBagOStuff, WAN: mediawiki-main-default, stash: db-replicated, message: SqlBagOStuff, session: SqlBagOStuff
+[caches] LocalisationCache: using store LCStoreDB
+[CryptRand] 0 bytes of randomness leftover in the buffer.
+[DBConnection] Wikimedia\Rdbms\LoadBalancer::openConnection: calling initLB() before first connection.
+[DBReplication] Cannot use ChronologyProtector with EmptyBagOStuff.
+[DBReplication] Wikimedia\Rdbms\LBFactory::getChronologyProtector: using request info {
+    "IPAddress": "10.229.23.214",
+    "UserAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/92.0.4515.159 Safari\/537.36",
+    "ChronologyProtection": false,
+    "ChronologyPositionIndex": 0
+}
+[DBConnection] Wikimedia\Rdbms\LoadBalancer::openConnection: connected to database 0 at '10.78.40.110'.
+[DBQuery] extwikidb SHOW /* Wikimedia\Rdbms\DatabaseMysqlBase::serverIsReadOnly  */ GLOBAL VARIABLES LIKE 'read_only'
+[SQLBagOStuff] Connection 279943 will be used for SqlBagOStuff
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:MWSession:k7375tl5f07a4j6e5n2ilroi32sr4p79'
+[session] SessionBackend "k7375tl5f07a4j6e5n2ilroi32sr4p79" is unsaved, marking dirty in constructor
+[session] SessionBackend "k7375tl5f07a4j6e5n2ilroi32sr4p79" save: dataDirty=1 metaDirty=1 forcePersist=0
+[cookie] already deleted setcookie: "extwikidb_session", "", "1599147912", "/", "", "1", "1", ""
+[cookie] already deleted setcookie: "extwikidbUserID", "", "1599147912", "/", "", "1", "1", ""
+[cookie] already deleted setcookie: "extwikidbToken", "", "1599147912", "/", "", "1", "1", ""
+[cookie] already deleted setcookie: "forceHTTPS", "", "1599147912", "/", "", "", "1", ""
+[DBConnection] Wikimedia\Rdbms\LoadBalancer::openConnection: connected to database 0 at '10.78.40.110'.
+[DBQuery] extwikidb BEGIN /* Wikimedia\Rdbms\Database::query (WikiPage::pageData)  */
+[DBQuery] extwikidb SELECT /* WikiPage::pageData  */  page_id,page_namespace,page_title,page_restrictions,page_is_redirect,page_is_new,page_random,page_touched,page_links_updated,page_latest,page_len,page_content_model  FROM `page`    WHERE page_namespace = '0' AND page_title = 'Main_Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'deps'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'list'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'preload'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'preload'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'namespaceGenderAliases'  LIMIT 1
+[DBQuery] extwikidb SELECT /* {closure}  */  pr_type,pr_expiry,pr_level,pr_cascade  FROM `page_restrictions`    WHERE pr_page = '1'
+Title::getRestrictionTypes: applicable restrictions to [[Main Page]] are {edit,move}
+[DBQuery] extwikidb SELECT /* MediaWiki\Storage\RevisionStore::fetchRevisionRowFromConds  */  rev_id,rev_page,rev_text_id,rev_timestamp,rev_minor_edit,rev_deleted,rev_len,rev_parent_id,rev_sha1,rev_comment AS `rev_comment_text`,NULL AS `rev_comment_data`,NULL AS `rev_comment_cid`,rev_user,rev_user_text,NULL AS `rev_actor`,rev_content_format,rev_content_model,page_namespace,page_title,page_id,page_latest,page_is_redirect,page_len,user_name  FROM `revision` INNER JOIN `page` ON ((page_id = rev_page)) LEFT JOIN `user` ON ((rev_user != 0) AND (user_id = rev_user))   WHERE rev_page = '1' AND page_id = '1' AND rev_id = '12466'  LIMIT 1
+[ContentHandler] Created handler for wikitext: WikitextContentHandler
+User::getBlockedStatus: checking...
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:title-invalid-empty'  LIMIT 1
+[DBQuery] extwikidb SELECT /* Block::newLoad  */  ipb_id,ipb_address,ipb_timestamp,ipb_auto,ipb_anon_only,ipb_create_account,ipb_enable_autoblock,ipb_expiry,ipb_deleted,ipb_block_email,ipb_allow_usertalk,ipb_parent_block_id,ipb_reason AS `ipb_reason_text`,NULL AS `ipb_reason_data`,NULL AS `ipb_reason_cid`,ipb_by,ipb_by_text,NULL AS `ipb_by_actor`  FROM `ipblocks`    WHERE ipb_address IN ('10.229.23.214','10.229.23.214')  OR ((ipb_range_start  LIKE '0AE5%' ESCAPE '`' ) AND (ipb_range_start &lt;= '0AE517D6') AND (ipb_range_end &gt;= '0AE517D6'))
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:messages:en'
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:messages:en:status'
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:messages:en:lock'
+[DBQuery] extwikidb REPLACE /* SqlBagOStuff::setMulti  */ INTO `objectcache` (keyname,value,exptime) VALUES ('extwikidb:messages:en:lock','˴2��\0','20210903154542')
+[DBPerformance] Expectation (writes &lt;= 0) by MediaWiki::main not met (actual: 1):
+query-m: REPLACE INTO `objectcache` (keyname,value,exptime) VALUES ('X')
+#0 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/TransactionProfiler.php(219): Wikimedia\Rdbms\TransactionProfiler-&gt;reportExpectationViolated('writes', 'query-m: REPLAC...', 1)
+#1 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1256): Wikimedia\Rdbms\TransactionProfiler-&gt;recordQueryCompletion('query-m: REPLAC...', 1630683912.35, true, 1)
+#2 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1151): Wikimedia\Rdbms\Database-&gt;doProfiledQuery('REPLACE INTO `o...', 'REPLACE /* SqlB...', true, 'SqlBagOStuff::s...')
+#3 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(2741): Wikimedia\Rdbms\Database-&gt;query('REPLACE INTO `o...', 'SqlBagOStuff::s...')
+#4 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/DatabaseMysqlBase.php(516): Wikimedia\Rdbms\Database-&gt;nativeReplace('`objectcache`', Array, 'SqlBagOStuff::s...')
+#5 /var/www/html/mediawiki-1.31.15/includes/objectcache/SqlBagOStuff.php(361): Wikimedia\Rdbms\DatabaseMysqlBase-&gt;replace('objectcache', Array, Array, 'SqlBagOStuff::s...')
+#6 /var/www/html/mediawiki-1.31.15/includes/objectcache/SqlBagOStuff.php(376): SqlBagOStuff-&gt;setMulti(Array, 30)
+#7 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(548): SqlBagOStuff-&gt;set('extwikidb:messa...', 1, 30)
+#8 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(421): BagOStuff-&gt;add('extwikidb:messa...', 1, 30)
+#9 [internal function]: BagOStuff-&gt;{closure}()
+#10 /var/www/html/mediawiki-1.31.15/vendor/wikimedia/wait-condition-loop/src/WaitConditionLoop.php(92): call_user_func(Object(Closure))
+#11 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(432): Wikimedia\WaitConditionLoop-&gt;invoke()
+#12 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(475): BagOStuff-&gt;lock('extwikidb:messa...', 0, 30, 'MessageCache::g...')
+#13 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(742): BagOStuff-&gt;getScopedLock('extwikidb:messa...', 0, 30, 'MessageCache::g...')
+#14 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(412): MessageCache-&gt;getReentrantScopedLock('extwikidb:messa...', 0)
+#15 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(342): MessageCache-&gt;loadFromDBWithLock('en', Array, NULL)
+#16 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(971): MessageCache-&gt;load('en')
+#17 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(900): MessageCache-&gt;getMsgFromNamespace('Pagetitle', 'en')
+#18 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(868): MessageCache-&gt;getMessageForLang(Object(LanguageEn), 'pagetitle', true, Array)
+#19 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(808): MessageCache-&gt;getMessageFromFallbackChain(Object(LanguageEn), 'pagetitle', true)
+#20 /var/www/html/mediawiki-1.31.15/includes/Message.php(1290): MessageCache-&gt;get('pagetitle', true, Object(LanguageEn))
+#21 /var/www/html/mediawiki-1.31.15/includes/Message.php(842): Message-&gt;fetchMessage()
+#22 /var/www/html/mediawiki-1.31.15/includes/Message.php(934): Message-&gt;toString('text')
+#23 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(902): Message-&gt;text()
+#24 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(949): OutputPage-&gt;setHTMLTitle(Object(Message))
+#25 /var/www/html/mediawiki-1.31.15/includes/page/Article.php(470): OutputPage-&gt;setPageTitle('Main Page')
+#26 /var/www/html/mediawiki-1.31.15/includes/actions/ViewAction.php(68): Article-&gt;view()
+#27 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(500): ViewAction-&gt;show()
+#28 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(294): MediaWiki-&gt;performAction(Object(Article), Object(Title))
+#29 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(818): MediaWiki-&gt;performRequest()
+#30 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(524): MediaWiki-&gt;main()
+#31 /var/www/html/mediawiki-1.31.15/index.php(42): MediaWiki-&gt;run()
+#32 {main}
+[DBQuery] extwikidb SELECT /* MessageCache::loadFromDB(en)-big  */  page_title,page_latest  FROM `page`    WHERE page_is_redirect = '0' AND page_namespace = '8' AND (page_title NOT LIKE '%/%' ESCAPE '`' ) AND (page_len &gt; 10000)
+[DBQuery] extwikidb SELECT /* MessageCache::loadFromDB(en)-small  */  page_title,old_id,old_text,old_flags  FROM `page` JOIN `revision` ON ((page_latest=rev_id)) JOIN `text` ON ((rev_text_id=old_id))   WHERE page_is_redirect = '0' AND page_namespace = '8' AND (page_title NOT LIKE '%/%' ESCAPE '`' ) AND (page_len &lt;= 10000)
+[DBQuery] extwikidb REPLACE /* SqlBagOStuff::setMulti  */ INTO `objectcache` (keyname,value,exptime) VALUES ('extwikidb:messages:en','}UMS#7���Wt���(�``=���0Ua�b6��(Y#3\n\ZiJ��8����`���=�Lw�~=��I�-�~�=sU�l&amp;C螆|؇�z{t6�Sm�T���+Zkch�HԵ�PFG���m��^�W)��0��\n���ɭ���]��Ga�)}�N��K](�Ń���Q):����Wl��dK�C�*Qh��*�q:$�$��v������x���6p\n���^�\Z�����A�ڻ���:9���J�HB�D�)lBT�	��JE��\"ͭ-	L/VB��0��5���$�X:����u�k�0�b�Zݠ���\r��rH�����U��:kWbC^��D��E���ы�W��$���VxԑQ;@���k�	�ɂ�\r�H&lt;�l&amp;�i�����Ɯ+`��Y�d�5r��qCQ�Ș�F���s@�����\n����J�C,S���-5fwK�SO\"��k�bѰ�Ⱥ����	�����(���Ȱ�&amp;�\0���T�U�ƂG��JH`i�	��թ\'��H(�@^k\0�@V`[���ĕi���F��ゞ(��1��_bA���A�B�&amp;?l�f��P���8����av����}�m���[�j,Ls�g�v\0w?��\Z]$T�H�ƼC��	���hA�DW-0`�k�T!۲~�Nɗ�T� =\Z��/�t\ryw���³t&lt;��m���gKW(�����X���+k/�(�&amp;���L����M]��P�=+0/��3}Տ�G�iz[���3{yߛ�|���Ƽ=���I�\n����A�Oj����)zb�ؓ�ଶ�g����^���{j���2�\'=Yq���P�\'+�_��#șnn&gt;R+�X.��O��O/�?U�^6&amp;�*0�������3�!13��P��v=g3�t���m�eg�]DY��y|�M˖gJ:z�k[�e�q���.�B����|(��2m�i�\0T��3��\n��#+�K��m���J�8Oo���_.P\Z\'U��&amp;�_��������S�T�ChFyw:�O�x8̻�8\\�O��\n�����P�đ&lt;Y��#�a4N��w���]���n�	���?��G���{��?','20380119031407')
+[DBPerformance] Expectation (writes &lt;= 0) by MediaWiki::main not met (actual: 2):
+query-m: REPLACE INTO `objectcache` (keyname,value,exptime) VALUES ('X')
+#0 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/TransactionProfiler.php(219): Wikimedia\Rdbms\TransactionProfiler-&gt;reportExpectationViolated('writes', 'query-m: REPLAC...', 2)
+#1 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1256): Wikimedia\Rdbms\TransactionProfiler-&gt;recordQueryCompletion('query-m: REPLAC...', 1630683912.3596, true, 2)
+#2 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1151): Wikimedia\Rdbms\Database-&gt;doProfiledQuery('REPLACE INTO `o...', 'REPLACE /* SqlB...', true, 'SqlBagOStuff::s...')
+#3 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(2741): Wikimedia\Rdbms\Database-&gt;query('REPLACE INTO `o...', 'SqlBagOStuff::s...')
+#4 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/DatabaseMysqlBase.php(516): Wikimedia\Rdbms\Database-&gt;nativeReplace('`objectcache`', Array, 'SqlBagOStuff::s...')
+#5 /var/www/html/mediawiki-1.31.15/includes/objectcache/SqlBagOStuff.php(361): Wikimedia\Rdbms\DatabaseMysqlBase-&gt;replace('objectcache', Array, Array, 'SqlBagOStuff::s...')
+#6 /var/www/html/mediawiki-1.31.15/includes/objectcache/SqlBagOStuff.php(376): SqlBagOStuff-&gt;setMulti(Array, 0)
+#7 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(670): SqlBagOStuff-&gt;set('extwikidb:messa...', Array)
+#8 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(420): MessageCache-&gt;saveToCaches(Array, 'all', 'en')
+#9 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(342): MessageCache-&gt;loadFromDBWithLock('en', Array, NULL)
+#10 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(971): MessageCache-&gt;load('en')
+#11 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(900): MessageCache-&gt;getMsgFromNamespace('Pagetitle', 'en')
+#12 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(868): MessageCache-&gt;getMessageForLang(Object(LanguageEn), 'pagetitle', true, Array)
+#13 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(808): MessageCache-&gt;getMessageFromFallbackChain(Object(LanguageEn), 'pagetitle', true)
+#14 /var/www/html/mediawiki-1.31.15/includes/Message.php(1290): MessageCache-&gt;get('pagetitle', true, Object(LanguageEn))
+#15 /var/www/html/mediawiki-1.31.15/includes/Message.php(842): Message-&gt;fetchMessage()
+#16 /var/www/html/mediawiki-1.31.15/includes/Message.php(934): Message-&gt;toString('text')
+#17 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(902): Message-&gt;text()
+#18 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(949): OutputPage-&gt;setHTMLTitle(Object(Message))
+#19 /var/www/html/mediawiki-1.31.15/includes/page/Article.php(470): OutputPage-&gt;setPageTitle('Main Page')
+#20 /var/www/html/mediawiki-1.31.15/includes/actions/ViewAction.php(68): Article-&gt;view()
+#21 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(500): ViewAction-&gt;show()
+#22 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(294): MediaWiki-&gt;performAction(Object(Article), Object(Title))
+#23 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(818): MediaWiki-&gt;performRequest()
+#24 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(524): MediaWiki-&gt;main()
+#25 /var/www/html/mediawiki-1.31.15/index.php(42): MediaWiki-&gt;run()
+#26 {main}
+[DBQuery] extwikidb DELETE /* SqlBagOStuff::delete  */ FROM `objectcache` WHERE keyname = 'extwikidb:messages:en:lock'
+[DBPerformance] Expectation (writes &lt;= 0) by MediaWiki::main not met (actual: 3):
+query-m: DELETE FROM `objectcache` WHERE keyname = 'X'
+#0 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/TransactionProfiler.php(219): Wikimedia\Rdbms\TransactionProfiler-&gt;reportExpectationViolated('writes', 'query-m: DELETE...', 3)
+#1 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1256): Wikimedia\Rdbms\TransactionProfiler-&gt;recordQueryCompletion('query-m: DELETE...', 1630683912.366, true, 1)
+#2 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(1151): Wikimedia\Rdbms\Database-&gt;doProfiledQuery('DELETE FROM `ob...', 'DELETE /* SqlBa...', true, 'SqlBagOStuff::d...')
+#3 /var/www/html/mediawiki-1.31.15/includes/libs/rdbms/database/Database.php(2845): Wikimedia\Rdbms\Database-&gt;query('DELETE FROM `ob...', 'SqlBagOStuff::d...')
+#4 /var/www/html/mediawiki-1.31.15/includes/objectcache/SqlBagOStuff.php(433): Wikimedia\Rdbms\Database-&gt;delete('`objectcache`', 'keyname = 'extw...', 'SqlBagOStuff::d...')
+#5 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(450): SqlBagOStuff-&gt;delete('extwikidb:messa...')
+#6 /var/www/html/mediawiki-1.31.15/includes/libs/objectcache/BagOStuff.php(488): BagOStuff-&gt;unlock('extwikidb:messa...')
+#7 [internal function]: BagOStuff-&gt;{closure}()
+#8 /var/www/html/mediawiki-1.31.15/vendor/wikimedia/scoped-callback/src/ScopedCallback.php(76): call_user_func_array(Object(Closure), Array)
+#9 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(420): Wikimedia\ScopedCallback-&gt;__destruct()
+#10 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(342): MessageCache-&gt;loadFromDBWithLock('en', Array, NULL)
+#11 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(971): MessageCache-&gt;load('en')
+#12 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(900): MessageCache-&gt;getMsgFromNamespace('Pagetitle', 'en')
+#13 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(868): MessageCache-&gt;getMessageForLang(Object(LanguageEn), 'pagetitle', true, Array)
+#14 /var/www/html/mediawiki-1.31.15/includes/cache/MessageCache.php(808): MessageCache-&gt;getMessageFromFallbackChain(Object(LanguageEn), 'pagetitle', true)
+#15 /var/www/html/mediawiki-1.31.15/includes/Message.php(1290): MessageCache-&gt;get('pagetitle', true, Object(LanguageEn))
+#16 /var/www/html/mediawiki-1.31.15/includes/Message.php(842): Message-&gt;fetchMessage()
+#17 /var/www/html/mediawiki-1.31.15/includes/Message.php(934): Message-&gt;toString('text')
+#18 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(902): Message-&gt;text()
+#19 /var/www/html/mediawiki-1.31.15/includes/OutputPage.php(949): OutputPage-&gt;setHTMLTitle(Object(Message))
+#20 /var/www/html/mediawiki-1.31.15/includes/page/Article.php(470): OutputPage-&gt;setPageTitle('Main Page')
+#21 /var/www/html/mediawiki-1.31.15/includes/actions/ViewAction.php(68): Article-&gt;view()
+#22 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(500): ViewAction-&gt;show()
+#23 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(294): MediaWiki-&gt;performAction(Object(Article), Object(Title))
+#24 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(818): MediaWiki-&gt;performRequest()
+#25 /var/www/html/mediawiki-1.31.15/includes/MediaWiki.php(524): MediaWiki-&gt;main()
+#26 /var/www/html/mediawiki-1.31.15/index.php(42): MediaWiki-&gt;run()
+#27 {main}
+[MessageCache] MessageCache::load: Loading en... local cache is empty, global cache is expired/volatile, loading from database
+Unstubbing $wgParser on call of $wgParser::firstCallInit from MessageCache-&gt;transform
+Parser: using preprocessor: Preprocessor_DOM
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'magicWords'  LIMIT 1
+Unstubbing $wgLang on call of $wgLang::_unstub from ParserOptions-&gt;__construct
+[caches] parser: SqlBagOStuff
+Article::view using parser cache: yes
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:pcache:idoptions:1'
+Parser cache options found.
+[DBQuery] extwikidb SELECT /* SqlBagOStuff::getMulti  */  keyname,value,exptime  FROM `objectcache`    WHERE keyname = 'extwikidb:pcache:idhash:1-0!canonical'
+ParserOutput cache found.
+Article::view: showing parser cache contents
+MediaWiki::preOutputCommit: primary transaction round committed
+[DBQuery] extwikidb COMMIT /* MWCallableUpdate::doUpdate  */
+MediaWiki::preOutputCommit: pre-send deferred updates completed
+MediaWiki::preOutputCommit: LBFactory shutdown completed
+[DBQuery] extwikidb BEGIN /* Wikimedia\Rdbms\Database::query (LinkBatch::doQuery (for Skin::preloadExistence))  */
+[DBQuery] extwikidb SELECT /* LinkBatch::doQuery (for Skin::preloadExistence)  */  page_id,page_len,page_is_redirect,page_latest,page_content_model,page_namespace,page_title  FROM `page`    WHERE (page_namespace = '1' AND page_title = 'Main_Page') OR (page_namespace = '4' AND page_title IN ('Privacy','About','General_disclaimer') )
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'specialPageAliases'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'rtl'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'capitalizeAllNouns'  LIMIT 1
+[DBQuery] extwikidb SELECT /* User::checkNewtalk  */  user_ip  FROM `user_newtalk`    WHERE user_ip = '10.229.23.214'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'datePreferenceMigrationMap'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'defaultDateFormat'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'digitTransformTable'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:august'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'linkPrefixExtension'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'namespaceAliases'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LocalFile::loadFromDB  */  img_name,img_size,img_width,img_height,img_metadata,img_bits,img_media_type,img_major_mime,img_minor_mime,img_timestamp,img_sha1,img_description AS `img_description_text`,NULL AS `img_description_data`,NULL AS `img_description_cid`,img_user,img_user_text,NULL AS `img_actor`,img_metadata  FROM `image`    WHERE img_name = 'Hprc_banner_tamu.png'  LIMIT 1
+[DBQuery] extwikidb SHOW /* Wikimedia\Rdbms\DatabaseMysqlBase::serverIsReadOnly  */ GLOBAL VARIABLES LIKE 'read_only'
+[DBQuery] extwikidb SHOW /* Wikimedia\Rdbms\DatabaseMysqlBase::serverIsReadOnly  */ GLOBAL VARIABLES LIKE 'read_only'
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:bad_image_list'  LIMIT 1
+[Mime] MimeAnalyzer::loadFiles: loading mime types from /var/www/html/mediawiki-1.31.15/includes/libs/mime/mime.types
+[Mime] MimeAnalyzer::loadFiles: loading mime info from /var/www/html/mediawiki-1.31.15/includes/libs/mime/mime.info
+File::transform: Doing stat for mwstore://local-backend/local-thumb/9/93/Hprc_banner_tamu.png/900px-Hprc_banner_tamu.png
+[FileOperation] FileBackendStore::getFileStat: File mwstore://local-backend/local-thumb/9/93/Hprc_banner_tamu.png/900px-Hprc_banner_tamu.png does not exist.
+TransformationalImageHandler::doTransform: creating 900x102 thumbnail at /tmp/transform_0207ca463d6c.png using scaler im
+TransformationalImageHandler::doTransform: returning unscaled image
+File::transform: Doing stat for mwstore://local-backend/local-thumb/9/93/Hprc_banner_tamu.png/900px-Hprc_banner_tamu.png
+TransformationalImageHandler::doTransform: creating 900x102 thumbnail at /tmp/transform_253de89362ad.png using scaler im
+TransformationalImageHandler::doTransform: returning unscaled image
+File::transform: Doing stat for mwstore://local-backend/local-thumb/9/93/Hprc_banner_tamu.png/900px-Hprc_banner_tamu.png
+TransformationalImageHandler::doTransform: creating 900x102 thumbnail at /tmp/transform_0843176dd7dd.png using scaler im
+TransformationalImageHandler::doTransform: returning unscaled image
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:pt-login'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:pt-createaccount'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:nstab-talk'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:vector-action-viewsource'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:viewsource'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC_Home_Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:wiki_Home_Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu/policies/'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:policies'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu/user_services/new_user_information.html'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:new_User_Info'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu/about/contact.html'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:contact_Us'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:grace'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:terra'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:sW:Portal'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:oOD_Portal'  LIMIT 1
+[DBQuery] extwikidb SELECT /* MediaWiki\Interwiki\{closure}  */  iw_prefix,iw_url,iw_api,iw_wikiid,iw_local,iw_trans  FROM `interwiki`    WHERE iw_prefix = 'sw'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:sW:Galaxy'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:galaxy'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC:AdaGraceFAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:ada_to_Grace_FAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* MediaWiki\Interwiki\{closure}  */  iw_prefix,iw_url,iw_api,iw_wikiid,iw_local,iw_trans  FROM `interwiki`    WHERE iw_prefix = 'hprc'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC:AMS'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:aMS_Documentation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC:Batch_Translation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:batch_Translation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:sW'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:software'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC:FileTransfers'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:file_Transfer'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:two_Factor'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu/resources'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:systems'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:https://hprc.tamu.edu/events/'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:events'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:hPRC:CommonProblems'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:fAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:pageinfo-toolboxlink'  LIMIT 1
+[DBQuery] extwikidb SELECT /* ResourceLoaderWikiModule::preloadTitleInfo  */  page_namespace,page_title,page_touched,page_len,page_latest  FROM `page`    WHERE (page_namespace = '8' AND page_title IN ('Common.css','Noscript.css','Print.css','Vector.css') )
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'separatorTransformTable'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:january'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:february'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:march'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:april'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:may_long'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:june'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:july'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:september'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:october'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:november'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:december'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:jan'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:feb'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:mar'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:apr'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:may'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:jun'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:jul'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:aug'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:sep'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:oct'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:nov'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:dec'  LIMIT 1
+Title::getRestrictionTypes: applicable restrictions to [[Main Page]] are {edit,move}
+[DBQuery] extwikidb SELECT /* ResourceLoaderWikiModule::getTitleInfo  */  page_namespace,page_title,page_touched,page_len,page_latest  FROM `page`    WHERE (page_namespace = '8' AND page_title IN ('Common.js','Vector.js') )
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:red-link-title'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-ca-view'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-ca-view'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:vector-more-actions'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-p-Important_Info'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:important_Info'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-HPRC-Home-Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-HPRC-Home-Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Wiki-Home-Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Wiki-Home-Page'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Policies'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Policies'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-New-User-Info'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-New-User-Info'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Contact-Us'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Contact-Us'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-p-User_Guides'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:user_Guides'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Grace'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Grace'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Terra'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Terra'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-OOD-Portal'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-OOD-Portal'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Galaxy'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Galaxy'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-p-Helpful_Pages'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:helpful_Pages'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Ada-to-Grace-FAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Ada-to-Grace-FAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-AMS-Documentation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-AMS-Documentation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Batch-Translation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Batch-Translation'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Software'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Software'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-File-Transfer'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-File-Transfer'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Two-Factor'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Two-Factor'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Systems'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Systems'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-Events'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-Events'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-n-FAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:accesskey-n-FAQ'  LIMIT 1
+[DBQuery] extwikidb SELECT /* LCStoreDB::get  */  lc_value  FROM `l10n_cache`    WHERE lc_lang = 'en' AND lc_key = 'messages:tooltip-p-tb'  LIMIT 1
 
-<!-- Following line DISABLES automatic table of contents -->
-<!-- This line is down here to remove blank line up top -->
-__NOTOC__
+--><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.048","walltime":"0.078","ppvisitednodes":{"value":96,"limit":1000000},"ppgeneratednodes":{"value":424,"limit":1000000},"postexpandincludesize":{"value":10399,"limit":2097152},"templateargumentsize":{"value":7172,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":157,"limit":5000000},"timingprofile":["100.00%   11.116      1 -total"," 54.29%    6.035      5 Template:TextBox"," 24.27%    2.698      5 Template:TitleBar"," 20.21%    2.247      1 Template:LogoBanner"," 19.76%    2.197      1 Template:WelcomeBanner"]},"cachereport":{"timestamp":"20210903034704","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":134});});</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
